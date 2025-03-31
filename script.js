@@ -33,6 +33,11 @@ function convertCurrency() {
         return;
     }
 
+    if (fromCurrency === toCurrency) {
+        document.getElementById('result').innerText = `${amount} ${fromCurrency} = ${amount} ${toCurrency}`;
+        return;
+    }
+
     let rate = exchangeRates[fromCurrency][toCurrency];
     let convertedAmount = (amount * rate).toFixed(2);
 
