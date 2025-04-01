@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo" class="logo">
+    </header>
+  
+    <main class="container">
+      <div class="content">
+        <h1><i class="fas fa-hand-rock"></i> Jokenpô <i class="fas fa-hand-scissors"></i></h1>
+        <p class="subtitle">Escolha entre Pedra, Papel ou Tesoura</p>
+        
+        <div class="choices">
+          <button class="choice-btn" data-choice="pedra">
+            <i class="fas fa-hand-rock"></i> Pedra
+          </button>
+          <button class="choice-btn" data-choice="papel">
+            <i class="fas fa-hand-paper"></i> Papel
+          </button>
+          <button class="choice-btn" data-choice="tesoura">
+            <i class="fas fa-hand-scissors"></i> Tesoura
+          </button>
+        </div>
+
+        <div class="game-area">
+          <div class="player-choice">
+            <h3>Sua escolha</h3>
+            <div class="choice-icon" id="player-choice-icon"></div>
+          </div>
+          
+          <div class="computer-choice">
+            <h3>Computador</h3>
+            <div class="choice-icon" id="computer-choice-icon"></div>
+          </div>
+        </div>
+
+        <div id="result" class="result-container">
+          <p>Clique em uma opção para começar!</p>
+        </div>
+
+        <button id="play-again" class="hidden">Jogar novamente</button>
+      </div>
+    </main>
+    
+    <footer>
+      <p>Alura - Imersão DEV - 2025</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
